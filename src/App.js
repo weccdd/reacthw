@@ -1,5 +1,5 @@
-import {Simpson} from "./ComponentsSimpson/Simpson";
-import {RickAndMorty} from "./RickAndMorty/RickAndMorty";
+import {Simpson} from "./Components/ComponentsSimpson/Simpson";
+import {RickAndMorty} from "./Components/RickAndMorty/RickAndMorty";
 
 const App = () => {
    const simpsons = [
