@@ -1,12 +1,12 @@
-const RickAndMorty = ({id, name, species, status, gender, image}) => {
+const RickAndMorty = ({item}) => {
     return (
         <div>
-            <h1>{id}</h1>
-            <h2>{name}</h2>
-            <h3>{species}</h3>
-            <h4>{status}</h4>
-            <h5>{gender}</h5>
-            <img src={image} alt={name}/>
+            <h1>{item.id}</h1>
+            <h2>{item.name}</h2>
+            <h3>{item.species}</h3>
+            <h4>{item.status}</h4>
+            <h5>{item.gender}</h5>
+            <img src={item.image} alt={item.name}/>
         </div>
     );
 };

@@ -1,10 +1,10 @@
-const Simpson = ({name, surname, age, info, photo}) => {
+const Simpson = ({item}) => {
     return (
         <div>
-            <h1>{name} {surname}</h1>
-            <h2>{age}</h2>
-            <p>{info}</p>
-            <img src={photo} alt={name}/>
+            <h1>{item.name} {item.surname}</h1>
+            <h2>{item.age}</h2>
+            <p>{item.info}</p>
+            <img src={item.photo} alt={item.name}/>
         </div>
     );
 };
