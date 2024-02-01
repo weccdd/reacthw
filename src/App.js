@@ -1,5 +1,6 @@
 import {simpsons} from "./data/arrSimpson";
 import {Simpson} from "./Components/ComponentsSimpson/Simpson";
+
 import {rickAndMorty} from "./data/arrRickAndMorty";
 import {RickAndMorty} from "./Components/RickAndMorty/RickAndMorty";
 
