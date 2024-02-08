@@ -1,7 +1,9 @@
+import {UserPostContainer} from "./components/UserPostsContainer/UserPostContainer";
+
 const App = () => {
     return (
         <div>
-            App
+            <UserPostContainer/>
         </div>
     );
 };
