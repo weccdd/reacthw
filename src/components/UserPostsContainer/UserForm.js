@@ -1,9 +1,8 @@
 import {useForm} from "react-hook-form";
-import {post} from "axios";
 import {userService} from "../../service/userService";
 
 const UserForm = ({setUsers}) => {
-    const{reset, handleSubmit, register}= useForm()
+    const{ handleSubmit, register}= useForm()
     const save = async (user)=>{
         const {data} = await userService.create(user)
         setUsers(prev=>[...prev, data])
