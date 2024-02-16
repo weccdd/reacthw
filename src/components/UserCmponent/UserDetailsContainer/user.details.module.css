@@ -1,0 +1,16 @@
+.UserInfo{
+    display: flex;
+    flex-direction: column;
+    background-color: #b5e8e8;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+}
+.UserInfo div{
+    font-size: 20px;
+}
+.UserInfo button{
+    width: 150px;
+    height: 25px;
+    margin-top: 20px;
+}
