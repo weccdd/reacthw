@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
-import css from "./user-details.module.css"
+import css from "./user.details.module.css"
+
 const UserDetails = ({ user }) => {
     const { id, name, username, email, website, address: { street, geo, city, suite, zipcode }, company: { name: companyName, bs, catchPhrase } } = user;
 
