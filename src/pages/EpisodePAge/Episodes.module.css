@@ -1,0 +1,19 @@
+.Episodes{
+   margin-left: 120px;
+   width: 85vw;
+   height: 80vh;
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.Episodes_Button{
+   display: flex;
+   justify-content: space-between;
+   width: 84.5vw;
+
+}
+.Episodes_Button button{
+   width: 80px;
+   font-size: 18px;
+   height: 45px;
+}

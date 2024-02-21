@@ -1,0 +1,8 @@
+.Characters{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    overflow-y: hidden;
+    width: 100vw;
+    margin: 60px;
+}
