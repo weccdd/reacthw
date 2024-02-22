@@ -1,8 +1,9 @@
 import {useEffect, useState} from "react";
-import {carService} from "../../service";
-import {Car} from "./Car";
-import {useAppContext} from "../../hooks/useAppContext";
+import {carService} from "../../../service";
+import {Car} from "../Car/Car";
+import {useAppContext} from "../../../hooks/useAppContext";
 import {useSearchParams} from "react-router-dom";
+import css from './Cars.module.css'
 
 const Cars = () => {
         const [cars, setCars] = useState([])
@@ -20,17 +21,27 @@ const Cars = () => {
             }, [trigger, query.get('page')])
 
         const prev = () => {
-            setQuery(prev => )
+            setQuery(prev => {
+                prev.set('page', (+prev.get('page')-1).toString())
+                return prev
+            })
         }
         const next = () => {
-
+            setQuery(prev => {
+                prev.set('page', (+prev.get('page')+1).toString())
+                return prev
+            })
         }
 
         return (
-            <div>
+            <div className={css.CarsMain}>
+                <div className={css.Cars}>
                 {cars.map(car => <Car key={car.id} car={car}/>)}
-                <button disabled={!prevNext.prev} onClick={prev}>PREV</button>
-                <button disabled={!prevNext.next} onClick={next}>NEXT</button>
+                </div>
+                < div className={css.ButtonCars}>
+                    <button disabled={!prevNext.prev} onClick={prev}>PREV</button>
+                    <button disabled={!prevNext.next} onClick={next}>NEXT</button>
+                </div>
             </div>
         );
 };

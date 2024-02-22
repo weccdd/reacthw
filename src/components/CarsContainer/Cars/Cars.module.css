@@ -1,0 +1,25 @@
+.CarsMain {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    flex-direction: column;
+}
+.Cars{
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 150px;
+}
+.ButtonCars{
+    width: 31.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ButtonCars button{
+    width: 120px;
+    height: 40px;
+    margin-bottom: 30px;
+}
