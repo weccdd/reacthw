@@ -1,0 +1,42 @@
+.LoginFormBlock{
+    border: 10px solid black;
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.LoginFormBlock h1{
+    font-size:24px;
+}
+.LoginForm input{
+    width: 20vw;
+    height: 5vh;
+    font-size: 24px;
+    padding-left: 15px;
+}
+
+.ButtonLoginForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
+.ButtonLoginForm button{
+    width: 20vw;
+    height: 5vh;
+    margin-top: 35px;
+}
+.LoginFormText{
+    font-size: 35px;
+    margin-top: 35px;
+}
+.ErrorLoginForm{
+    font-size: 20px;
+
+}
+
+
+
